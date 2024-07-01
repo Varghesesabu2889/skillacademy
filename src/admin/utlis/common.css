@@ -1,0 +1,85 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar li a .icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.sidebar li a:hover {
+  background-color: steelblue;
+}
+
+.sidebar li a span {
+  font-size: 1.2em;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar li a {
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  .sidebar li a .icon {
+    margin-right: 0;
+  }
+
+  .sidebar li a span {
+    display: none;
+  }
+}
+
+/* Layout Styles */
+.dashboard-admin {
+  display: flex;
+}
+
+.dashboard-admin .content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Ensures content is not hidden behind the sidebar */
+}
+
+@media (max-width: 768px) {
+  .dashboard-admin .content {
+    margin-left: 0;
+  }
+}
