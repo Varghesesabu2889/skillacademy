@@ -15,7 +15,7 @@ const Home = () => {
         <button onClick={() => navigate("/courses")} className='common-btn'>Get Started</button>
       </div>
       <div className="home-image">
-        <img src={image} alt="Learning Hub"  width={"75%"} style={{marginBottom:"60px"}}/>
+        <img src={image} alt="Learning Hub"  width={"100%"} style={{marginBottom:"60px"}}/>
       </div>
     </div>
   );

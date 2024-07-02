@@ -14,7 +14,7 @@ const AdminCourses = ({ user }) => {
         'Backend Development',
         'Full Stack Development',
         'Mobile Development',
-        'Web Developer',
+        'Web Development',
         'Data Science',
         'Machine Learning',
         'Artificial Intelligence',
